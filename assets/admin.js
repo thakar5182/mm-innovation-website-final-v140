@@ -115,7 +115,7 @@ function renderAdminProducts(){
   const rows=all.filter(p=>!q||[p.name,p.category,p.description,...(p.specs||[])].join(' ').toLowerCase().includes(q));
   $('adminProductsGrid').innerHTML=rows.map(p=>`
     <div class="admin-product-card">
-      <div class="admin-product-photo"><img src="${esc(p.image||'assets/mm-logo-mark.svg')}" alt="${esc(p.name)}"></div>
+      <div class="admin-product-photo"><img src="${esc(p.image||'assets/mm-logo.png')}" alt="${esc(p.name)}"></div>
       <div class="admin-product-info">
         <div class="cat">${esc(p.category||'Product')}</div>
         <h3>${esc(p.name||'Untitled Product')}</h3>
@@ -138,7 +138,7 @@ function renderAdminProducts(){
 }
 function openProductModal(product=null){
   editingProductId=product?.id??null;
-  pendingProductImage=product?.image||'assets/mm-logo-mark.svg';
+  pendingProductImage=product?.image||'assets/mm-logo.png';
   $('productModalTitle').textContent=product?'Edit Product':'Add Product';
   $('productName').value=product?.name||'';
   $('productCategory').value=product?.category||'';
@@ -171,7 +171,7 @@ function saveProductFromModal(){
     category:$('productCategory').value.trim()||'Product',
     description:$('productDescription').value.trim(),
     specs:$('productSpecs').value.split(',').map(x=>x.trim()).filter(Boolean),
-    image:pendingProductImage||'assets/mm-logo-mark.svg',
+    image:pendingProductImage||'assets/mm-logo.png',
     featured:$('productFeatured').checked,
     visible:$('productVisible').checked,
     order:Number($('productOrder').value)||0

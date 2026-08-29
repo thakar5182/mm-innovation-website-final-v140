@@ -25,7 +25,7 @@ window.MM_CMS_MANIFEST={
     {key:'contact.form.title',page:'contact.html',tag:'h2',default:'Tell us what you need.'}
   ],
   images:[
-    {key:'index.hero.logo',page:'index.html',label:'Hero logo',default:'assets/mm-logo-primary.svg'},
+    {key:'index.hero.logo',page:'index.html',label:'Hero logo',default:'assets/mm-logo.png'},
     {key:'index.quality.image',page:'index.html',label:'Precision engineering visual',default:'assets/product-photos/visual-engineering.webp'},
     {key:'about.profile.image',page:'about.html',label:'Hydraulic cylinder visual',default:'assets/product-photos/visual-cylinder.webp'},
     {key:'industries.application.image',page:'industries.html',label:'Industry applications visual',default:'assets/product-photos/visual-industries.webp'}

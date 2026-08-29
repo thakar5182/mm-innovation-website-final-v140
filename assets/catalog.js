@@ -18,7 +18,7 @@
   let previousFocus=null;
 
   function photo(p){
-    const source=p.image||'assets/mm-logo-mark.svg';
+    const source=p.image||'assets/mm-logo.png';
     return source.indexOf('assets/product-photos/')===0
       ?source.replace('assets/product-photos/','assets/catalog-products/')
       :source;
@@ -36,13 +36,13 @@
     grid.innerHTML=rows.map(function(p){return '<article class="product-card reveal visible"><div class="product-media"><img loading="lazy" decoding="async" width="1200" height="900" src="'+esc(cover(p))+'" alt="'+esc(p.name)+'"><span class="product-badge">'+esc(p.category||'Product')+'</span></div><div class="product-body"><h3>'+esc(p.name)+'</h3><p>'+esc(p.description)+'</p><div class="spec-chips">'+specsOf(p).slice(0,3).map(function(s){return '<span>'+esc(s)+'</span>'}).join('')+'</div><div class="product-actions"><button type="button" class="btn btn-secondary" data-view="'+esc(p.id)+'">View details</button><a class="btn btn-primary" href="contact.html?product='+encodeURIComponent(p.name)+'">Enquire</a></div></div></article>'}).join('');
     empty.hidden=rows.length!==0;
     if(count)count.textContent=rows.length+' product'+(rows.length===1?'':'s')+' shown';
-    grid.querySelectorAll('img').forEach(function(img){img.addEventListener('error',function(){img.src='assets/mm-logo-mark.svg';img.classList.add('image-fallback')},{once:true})});
+    grid.querySelectorAll('img').forEach(function(img){img.addEventListener('error',function(){img.src='assets/mm-logo.png';img.classList.add('image-fallback')},{once:true})});
     grid.querySelectorAll('[data-view]').forEach(function(button){button.addEventListener('click',function(){openProduct(button.dataset.view)})});
   }
   function openProduct(id){
     const p=products.find(function(item){return String(item.id)===String(id)});if(!p)return;
     previousFocus=document.activeElement;
-    const image=modal.querySelector('[data-modal-image]');image.src=photo(p);image.alt=p.name;image.onerror=function(){image.src='assets/mm-logo-mark.svg';image.onerror=null};
+    const image=modal.querySelector('[data-modal-image]');image.src=photo(p);image.alt=p.name;image.onerror=function(){image.src='assets/mm-logo.png';image.onerror=null};
     modal.querySelector('[data-modal-category]').textContent=p.category||'Product';
     modal.querySelector('[data-modal-title]').textContent=p.name||'Product';
     modal.querySelector('[data-modal-description]').textContent=p.description||'';
