@@ -1,0 +1,9 @@
+M&M Innovation Website — Image & Brand Notes
+================================================
+
+- All 50 product entries use a different, product-specific photograph.
+- Product photography was selected from the M&M literature supplied for this project,
+  then individually reframed, enlarged, sharpened and optimized to 1200 x 900 WebP.
+- The product card and View Details modal intentionally use the same authoritative file.
+- Generic rotating stock covers from the earlier build are no longer used.
+- The new M&M logo is an original transparent SVG mark created for this website build.

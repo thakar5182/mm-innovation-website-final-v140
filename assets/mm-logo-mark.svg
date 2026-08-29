@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">M&amp;M Innovations mark</title>
+  <desc id="desc">Geometric M and ampersand inspired by precision engineering and fluid motion.</desc>
+  <path fill="#0b1d2d" d="M120 6 214 60v120l-94 54-94-54V60z"/>
+  <path fill="none" stroke="#c96c3b" stroke-width="8" d="M120 18 204 66v108l-84 48-84-48V66z"/>
+  <path fill="none" stroke="#f7f4ed" stroke-linecap="square" stroke-linejoin="miter" stroke-width="20" d="M58 157V79l62 56 62-56v78"/>
+  <path fill="none" stroke="#c96c3b" stroke-linecap="round" stroke-width="11" d="M82 172c0-31 54-27 54-55 0-14-11-23-25-23-16 0-27 11-27 26 0 29 33 52 70 52"/>
+  <circle cx="154" cy="172" r="8" fill="#f7f4ed"/>
+</svg>
