@@ -1857,3 +1857,16 @@ img {
     font-size: 31px;
   }
 }
+
+/* Colourful accents and premium enhancements */
+:root{--accent:#c96c3b;--accent-2:#f0a175;--green:#0d8a5e;--purple:#6b4fae;--coral:#e0556b}
+.hero{background:radial-gradient(circle at 72% 36%,rgba(255,255,255,.96),rgba(236,247,251,.6) 27%,transparent 52%),linear-gradient(135deg,#e8f5fb 0%,#f0e6f6 50%,#fef5f0 100%)}
+.hero h1 span,.gradient{background:linear-gradient(95deg,#0a4b7d,#c96c3b,#38a7d6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.section-soft{background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(240,230,236,.45))}
+.eyebrow{color:var(--accent);letter-spacing:.14em}
+.section-head h2,.content-panel h2{color:#0a2c4c}
+.cta-box{background:linear-gradient(135deg,rgba(255,255,255,.88),rgba(240,230,236,.82))}
+.division-card,.service-card{background:linear-gradient(145deg,rgba(255,255,255,.7),rgba(255,255,255,.5))}
+.visual-panel{background:linear-gradient(135deg,#e8f5fb,#f0e6f6)}
+.metric-row{background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,255,255,.6))}
+.footer{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.2))}
