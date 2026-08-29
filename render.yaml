@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mm-innovation-website-final-v140
+    runtime: static
+    buildCommand: echo "No build step needed for static site"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+    routes:
+      - type: rewrite
+        source: /(.*)
+        destination: /$1
